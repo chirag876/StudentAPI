@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        
+        <div class="page-content page-container" id="page-content">
+            <div class="padding">
+                <div class="row container d-flex justify-content-center">
+                    <div class="col-md-12">
+                        <div class="card px-3">
+                            <div class="card-body">
+                                <h4 class="card-title">Student Details</h4>
+                                <div class="add-student d-flex"> <input type="text" class="form-control add-student-input" placeholder="Please Enter Your Name" id="Name"> 
+                                    <!-- <input type="text" class="form-control todo-list-input" placeholder="taskId" id ="taskId">  -->
+                                <input type="text" class="form-control add-student-input" placeholder="Age" id ="Age"> 
+                                <input type="text" class="form-control add-student-input" placeholder="Marks" id ="Marks"> 
+                                <button class="add btn btn-primary font-weight-bold add-student-add-btn"  id="savebtton">Enter</button> </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p id="demo"></p>
+        <script
+        src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+        <script src="../StudentAPI/StudentAPI.js"></script>
+</body>
+</html>
+<style>
+    /* Styles for the card containing the form */
+.card {
+  margin-top: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Styles for the form inputs and button */
+.form-control {
+  margin-right: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  padding: 10px;
+  width: 250px;
+}
+
+.add-student-input {
+  width: 300px;
+}
+
+.add-student-add-btn {
+  margin-left: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.add-student-add-btn:hover {
+  background-color: #0069d9;
+}
+
+/* Styles for the page container */
+.page-content {
+  min-height: calc(100vh - 100px);
+}
+
+.padding {
+  padding: 20px;
+}
+
+</style>
